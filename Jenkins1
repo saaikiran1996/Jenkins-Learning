@@ -1,0 +1,8 @@
+pipeline{
+agent none
+stages{
+stage (Hello){
+docker run hello-world
+}
+}
+}
