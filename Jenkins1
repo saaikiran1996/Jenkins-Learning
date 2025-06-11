@@ -3,7 +3,7 @@ agent none
 stages {
 stage('Hello') {
 steps {
-docker (hello-world)
+docker ('hello-world')
 }
 }
 }
