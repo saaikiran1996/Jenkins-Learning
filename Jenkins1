@@ -1,10 +1,14 @@
 pipeline {
 agent none
 stages {
-stage('Hello') {
+stage('mysql') {
 steps {
-echo 'Hello wold'
+docker (image 'mysql:latest')
 }
+}
+stage('test')
+steps{
+sh 'mysql –V'
 }
 }
 }
